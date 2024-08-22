@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray-100: #1F2523;
+    --gray-200: #4D5C57;
+    --gray-300: #CDD5D2;
+    --gray-400: #E4ECE9;
+    --gray-500: #F9FBFA;
+    --white: #FFFFFF;
+    --green-100: #1F8459;
+    --green-200: #2CB178;
+    --danger: #B51919;
+    font-size: 62.5%;
+    --heading-lg: 700 2rem/2.4rem "Open Sans", sans-serif;
+    --heading-md: 700 1.6rem/2rem "Open Sans", sans-serif;
+    --heading-sm: 700 1.4rem/1.8em "Open Sans", sans-serif;
+    --sub-heading: 600 1.4rem/1.8em "Open Sans", sans-serif;
+    --body-lg: 1.6rem/2em "Open Sans", sans-serif;
+    --body-md: 1.4rem/1.8em "Open Sans", sans-serif;
+    --body-sm: 1.2rem/1.6em "Open Sans", sans-serif;
+    --label: 1rem/1.4em "Open Sans", sans-serif;
+}
+
+body {
+    font: var(--body-md);
+    background-color: var(--gray-400);
+}
+
+h2 {
+    font: var(--body-lg);
+}
+
+input, select, textarea {
+    width: 100%;
+}

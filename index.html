@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="container">
+        <header>
+            <img src="assets/brand.svg" alt="Logo do site">
+        </header>
+        
+        <main>
+            <section id="create-solicitation">
+                <h1>Solicitação de reembolso</h1>
+                <p>Informe os dados da despesa para solicitar reembolso. 
+                    A despesa será analisada e reembolsada em até 30 dias.</p>
+                    
+                    <form action="">
+                        <div class="input-wrap">
+                            <label for="title" class="label">Título da despesa</label>
+                            <input type="text" name="title" id="title" class="text-field" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="category" class="label">Categoria</label>
+                            <select name="category" id="category" class="select" required>
+                                <option value="">Selecione</option>
+                                <option value="food">Alimentação</option>
+                                <option value="accommodation">Hospedagem</option>
+                                <option value="services">Serviços</option>
+                                <option value="transport">Transporte</option>
+                                <option value="others">Outros</option>
+                            </select>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="amount" class="label">Valor</label>
+                            <input type="text" name="amount" id="amount" class="text-field" required placeholder="R$ 0,00">
+                        </div>
+                        <button type="submit" class="btn">Adicionar despesa</button>
+                    </form>
+                </section>
+                
+                <section id="read-solicitations">
+                    <header>
+                        <h2>Minhas solicitações</h2>
+                        <span></span>
+                        <span id="expenses-count">0 despesas</span>
+                        <strong id="expenses-total-amount"><small>R$</small> 0,00</strong>
+                    </header>
+                    
+                    <ul>
+                        
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+    </html>
